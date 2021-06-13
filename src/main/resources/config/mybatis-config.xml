@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<settings>
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
+	</settings>
+	
+<!-- 	<typeAliases> -->
+<!-- 		<typeAlias alias="boardGroupVO" type="com.sfc.fanpage.vo.BoardGroupVO"/> -->
+<!-- 		<typeAlias alias="boardVO" type="com.sfc.fanpage.vo.BoardVO"/> -->
+<!-- 		<typeAlias alias="commentVO" type="com.sfc.fanpage.vo.CommentVO"/> -->
+<!-- 		<typeAlias alias="fileUploadVO" type="com.sfc.fanpage.vo.FileUploadVO"/> -->
+<!-- 		<typeAlias alias="user" type="com.sfc.fanpage.model.User"/> -->
+<!-- 		<typeAlias alias="customUserDetails" type="com.sfc.fanpage.security.CustomUserDetails"/> -->
+<!-- 		<typeAlias alias="role" type="com.sfc.fanpage.model.Role"/> -->
+<!-- 		<typeAlias alias="menu" type="com.sfc.fanpage.model.Menu"/> -->
+<!-- 		<typeAlias alias="menuCategory" type="com.sfc.fanpage.model.MenuCategory"/> -->
+<!-- 		<typeAlias alias="loginHistory" type="com.sfc.fanpage.model.LoginHistory"/> -->
+<!-- 	</typeAliases> -->
+</configuration>

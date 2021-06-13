@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Logger : Principal of log, print log of specific package and level-->
+<!-- logging location(console, file, DB) -->
+<!-- logging way -->
+<configuration>
+	<appender name="STDOUT"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>
+				%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n
+			</Pattern>
+		</layout>
+	</appender>
+
+	<logger name="persys.web" level="DEBUG"></logger>
+	<logger name="persys.test" level="DEBUG"></logger>
+
+<!-- 	<logger name="persys.web" level="debug"> -->
+<!-- 		<appender-ref ref="STDOUT" /> -->
+<!-- 	</logger> -->
+	
+	<root level="info">
+		<appender-ref ref="STDOUT"/>
+	</root>
+</configuration>
