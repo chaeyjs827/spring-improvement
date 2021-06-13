@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import persys.web.dao.UserDao;
 import persys.web.exception.AbstractEbloBaseException;
+import persys.web.proxyPatternTest.TryAnno;
 import persys.web.service.UserService;
 
 @Controller
@@ -26,10 +27,13 @@ public class UserController {
 
 	@RequestMapping("/test")
 	@ResponseBody
-	@CYJ
+//	@CYJ
+	@TryAnno
 	@LSG
 	@ExceptionHandler(AbstractEbloBaseException.class)
 	public String test() {
+//		StopWatch sw = new StopWatch();
+//		sw.start();
 		Integer i = 0;
 		try {
 			i = userDao.getValue();
@@ -41,6 +45,8 @@ public class UserController {
 			System.out.println("catch Exception : " + e.getStackTrace());
 		}
 		logger.debug("here!");
+//		sw.stop();
+//		System.out.println(sw.prettyPrint());
 		return "Value is from DB : " + i;
 	}
 	
